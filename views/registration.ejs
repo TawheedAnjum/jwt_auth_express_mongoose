@@ -24,17 +24,19 @@
           <form method="post">
             <div class="form-group">
               <label for="exampleInput0">Name</label>
-              <input type="text" name="name" class="form-control" id="exampleInput0" />
-              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              <input type="text" name="name" class="form-control" id="exampleInput0" value="<%= inputVal.name %>" />
+              <small id="emailHelp" class="form-text text-danger"><%= errorMsg.name %></small>
             </div>
             <div class="form-group">
               <label for="exampleInput1">Email address</label>
-              <input type="email" name="email" class="form-control" id="exampleInput1" aria-describedby="emailHelp" />
+              <input type="email" name="email" class="form-control" id="exampleInput1" aria-describedby="emailHelp" value="<%= inputVal.email %>" />
               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              <small id="emailHelp" class="form-text text-danger"><%= errorMsg.email %></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" name="password" class="form-control" id="exampleInputPassword1" />
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1" value="<%= inputVal.password %>" />
+              <small id="emailHelp" class="form-text text-danger"><%= errorMsg.password %></small>
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" />
